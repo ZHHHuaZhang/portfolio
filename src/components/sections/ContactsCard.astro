@@ -1,0 +1,39 @@
+---
+import Card from '../Card.astro'
+import { LINKS } from '../../lib/constants'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
+  <div class="h-full">
+    <h1 class="text-xl font-bold text-foreground">Awards</h1>
+    <p class="text-xs">
+      Second Prize, 2019 Blue Bridge Cup National Software and Information
+      Technology Professionals Competition Guangdong Province
+      <br />
+      <br />
+      Excellence Award, College Award, 2018 China University Advertising Art Festival
+      <br />
+      <br />
+      Outstanding Student Leader Scholarship
+      <br />
+      <br />
+    </p>
+    <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground">
+        Let's start working together!
+      </h1>
+    </header>
+    <address class="mt-4 flex flex-col">
+      <h2 class="text-gray-500">Contact Details</h2>
+      <p>zhanghouhua22@foxmail.com</p>
+    </address>
+    <div class="mt-4 flex w-fit flex-col">
+      <h2 class="text-gray-500">Socials</h2>
+      <ul>
+        <li>
+          <a href={LINKS.github} target="_blank">Github</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Card>
