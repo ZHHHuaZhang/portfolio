@@ -19,22 +19,5 @@ import ProjectCard from '../components/ProjectCard.astro'
         Projects and clone's
       </h2>
     </TopLayout>
-    <BottomLayout>
-      <div class="flex w-full flex-wrap justify-center gap-2">
-        {
-          entries.items.map((entry: any) => (
-            <ProjectCard
-              key={entry?.sys?.id}
-              href={entry?.fields?.website}
-              heading={entry?.fields?.name}
-              subheading={entry?.fields?.description}
-              imagePath={entry?.fields?.img?.fields?.file.url}
-              altText={entry?.fields?.img?.fields.title}
-              class="w-full sm:w-2/5"
-            />
-          ))
-        }
-      </div>
-    </BottomLayout>
   </main>
 </BaseLayout>
