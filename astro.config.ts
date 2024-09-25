@@ -4,8 +4,9 @@ import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
+  
   site: process.env.CI
-    ? 'https://astro-shadcn-ui-template.vercel.app'
+    ? 'https://zhhhuazhang.github.io'
     : 'http://localhost:4321',
   integrations: [
     react(),
