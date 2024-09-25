@@ -8,7 +8,7 @@ export default defineConfig({
   site: process.env.CI
     ? 'https://zhhhuazhang.github.io'
     : 'http://localhost:4321',
-  base: 'portfolio',
+  base: process.env.CI?'portfolio':'',
   integrations: [
     react(),
     tailwind({
